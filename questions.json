@@ -1,0 +1,338 @@
+[
+{
+"frage": "Warum kann ein Grid-Layout komplett verschwinden, obwohl kein Syntaxfehler sichtbar ist?",
+"antworten": [
+"Weil Grid nur in Chrome funktioniert",
+"Weil grid-template-areas falsche oder nicht passende Namen enthält",
+"Weil HTML CSS blockiert",
+"Weil flex-direction fehlt",
+"Weil gap zu groß ist"
+],
+"korrekteAntwort": 1,
+"erklaerung": "Wenn die Namen nicht exakt übereinstimmen oder falsch definiert sind, wird das gesamte Grid-Layout nicht angewendet."
+},
+{
+"frage": "Finde den Fehler im folgenden HTML-Code:\n<form>\n <label for=\"name\">Name:</label>\n <input type=\"text\" id=\"name\"\n</form>",
+"antworten": [
+"Das form-Element darf kein label enthalten",
+"Das input-Tag ist nicht korrekt geschlossen",
+"Das label benötigt ein name-Attribut",
+"Der type-Wert ist falsch",
+"Der Code ist korrekt"
+],
+"korrekteAntwort": 1,
+"erklaerung": "HTML-Tags müssen korrekt geschlossen werden. Ein fehlendes '>' führt zu einem Syntaxfehler im Dokument."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n justify-content: center;\n align-items: center;\n flex-direction: row;\n}\nWelche Aussage ist korrekt?",
+"antworten": [
+"justify-content funktioniert nur mit Grid, nicht mit Flexbox",
+"align-items kann nur in column verwendet werden",
+"flex-direction darf nicht mit display:flex kombiniert werden",
+"Der Code ist korrekt und zentriert Elemente horizontal und vertikal",
+"center ist kein gültiger Wert für justify-content"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Ein Flex-Container erlaubt die Kombination aller genannten Eigenschaften. Mit justify-content und align-items kann eine vollständige Zentrierung erreicht werden, solange Flexbox aktiviert ist."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n flex-direction: column;\n justify-content: center;\n}\nWas passiert hier?",
+"antworten": [
+"justify-content funktioniert nicht mit column",
+"Elemente werden horizontal zentriert",
+"flex-direction deaktiviert Flexbox",
+"Der Code ist ungültig",
+"Es wird kein Flex-Layout erzeugt"
+],
+"korrekteAntwort": 1,
+"erklaerung": "Bei column wird die Hauptachse vertikal. justify-content wirkt dann vertikal, wodurch Inhalte in der Mitte der Containerhöhe platziert werden."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n justify-content: center;\n align-items: flex-start;\n}\nWelche Aussage stimmt?",
+"antworten": [
+"justify-content beeinflusst hier die vertikale Ausrichtung",
+"align-items steuert die Hauptachse",
+"Der Code ist falsch geschrieben",
+"Flexbox funktioniert nur mit Grid",
+"Die Ausrichtung ist abhängig von flex-shrink"
+],
+"korrekteAntwort": 0,
+"erklaerung": "Bei flex-direction: row (Standard) ist die Hauptachse horizontal. justify-content wirkt entlang dieser Achse und beeinflusst somit die horizontale Positionierung."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n flex-wrap: wrap;\n flex-direction: row;\n}\nWas bedeutet flex-wrap: wrap?",
+"antworten": [
+"Elemente werden immer in einer Zeile gehalten",
+"Flexbox wird deaktiviert",
+"Elemente werden absolut positioniert",
+"Elemente dürfen in mehrere Zeilen umbrechen",
+"Elemente werden gelöscht"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Ohne wrap bleiben Flex-Items in einer einzigen Zeile. Mit wrap dürfen sie in eine neue Zeile wechseln, wenn der Platz nicht ausreicht."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n flex-direction: column;\n align-items: center;\n}\nWas passiert hier?",
+"antworten": [
+"Elemente werden horizontal zentriert",
+"Elemente werden vertikal gestreckt",
+"Flexbox wird deaktiviert",
+"Der Code ist ungültig",
+"justify-content hat keine Wirkung"
+],
+"korrekteAntwort": 0,
+"erklaerung": "Bei column ist die Hauptachse vertikal, daher wirkt align-items auf die horizontale Achse und zentriert Elemente links/rechts."
+},
+{
+"frage": "Welche Aussage beschreibt die Hauptachse in Flexbox korrekt?",
+"antworten": [
+"Sie ist immer vertikal",
+"Sie ist immer horizontal",
+"Sie ist unabhängig von flex-direction",
+"Sie hängt von flex-direction ab",
+"Sie ist immer diagonal"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Die Hauptachse wird durch flex-direction bestimmt. Sie kann horizontal (row) oder vertikal (column) sein."
+},
+{
+"frage": "Welche Aussage beschreibt die Querachse in Flexbox korrekt?",
+"antworten": [
+"Sie ist identisch mit der Hauptachse",
+"Sie ist immer horizontal",
+"Sie ist immer vertikal",
+"Sie ist abhängig von der Hauptachse und steht senkrecht zu ihr",
+"Sie existiert nur bei Grid"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Die Querachse steht immer im rechten Winkel zur Hauptachse und dient zur Ausrichtung der Elemente quer zur Fließrichtung."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n justify-content: space-between;\n align-items: stretch;\n}\nWelche Aussage ist korrekt?",
+"antworten": [
+"space-between ist kein gültiger Wert",
+"align-items funktioniert nur mit Grid",
+"Der Code ist korrekt und verteilt Elemente mit Abstand",
+"justify-content wirkt nur vertikal",
+"Flexbox muss flex-grow enthalten"
+],
+"korrekteAntwort": 2,
+"erklaerung": "space-between ist ein gültiger Wert für die Verteilung entlang der Hauptachse. Elemente werden gleichmäßig verteilt mit Abstand dazwischen."
+},
+{
+"frage": "Finde den Fehler im folgenden CSS:\n.container {\n display: flex;\n flex-direction: row;\n justify-content: center;\n align-items: center;\n}\nWas wird erreicht?",
+"antworten": [
+"Elemente werden oben links ausgerichtet",
+"Elemente werden nur horizontal zentriert",
+"Flexbox wird deaktiviert",
+"Elemente werden nur vertikal zentriert",
+"Elemente werden horizontal und vertikal zentriert"
+],
+"korrekteAntwort": 4,
+"erklaerung": "Durch die Kombination beider Achsen wird eine vollständige Zentrierung im Container erreicht."
+},
+{
+"frage": "Welche Aussage beschreibt flex-direction korrekt?",
+"antworten": [
+"Es steuert die Farbe der Flex-Items",
+"Es bestimmt die Größe der Elemente",
+"Es legt fest, ob Elemente in Reihe oder Spalte angeordnet werden",
+"Es deaktiviert Flexbox automatisch",
+"Es ersetzt justify-content"
+],
+"korrekteAntwort": 2,
+"erklaerung": "flex-direction bestimmt die Ausrichtung der Hauptachse und damit die Grundrichtung der Anordnung der Flex-Items."
+},
+{
+"frage": "Was passiert, wenn zwei CSS-Regeln dasselbe Element betreffen, aber unterschiedliche Eigenschaften setzen?",
+"antworten": [
+"Die erste Regel im CSS wird immer ignoriert",
+"Beide Regeln werden gelöscht",
+"Der Browser wählt zufällig eine Regel aus",
+"Die Regel mit höherer Spezifität oder späterer Definition gewinnt",
+"CSS funktioniert in diesem Fall nicht mehr"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Wenn mehrere Regeln auf dasselbe Element wirken, entscheidet die sogenannte Priorität. Diese hängt unter anderem von Spezifität und Reihenfolge im Code ab."
+},
+{
+"frage": "Welche CSS-Regel hat die höchste Spezifität?",
+"antworten": [
+"p { color: red; }",
+".class { color: red; }",
+"#id { color: red; }",
+"body p { color: red; }",
+"* { color: red; }"
+],
+"korrekteAntwort": 2,
+"erklaerung": "IDs haben eine höhere Gewichtung als Klassen oder Tag-Selektoren. Dadurch überschreiben sie in der Regel andere CSS-Regeln."
+},
+{
+"frage": "Warum wird eine CSS-Regel manchmal nicht angewendet, obwohl sie im Code steht?",
+"antworten": [
+"Weil CSS nur im Internet Explorer funktioniert",
+"Weil HTML die CSS-Regeln automatisch löscht",
+"Weil die Datei zu groß ist",
+"Weil der Browser CSS ignoriert",
+"Weil eine spezifischere Regel oder spätere Regel sie überschreibt"
+],
+"korrekteAntwort": 4,
+"erklaerung": "CSS wird nach klaren Prioritätsregeln ausgewertet. Spezifischere Selektoren oder später geladene Regeln können andere überschreiben."
+},
+{
+"frage": "Was bedeutet der Selektor input[type=\"checkbox\"]?",
+"antworten": [
+"Alle Checkboxen im gesamten Dokument",
+"Alle input-Felder unabhängig vom Typ",
+"Alle Elemente mit der Klasse checkbox",
+"Nur input-Elemente mit dem Typ checkbox",
+"Nur Labels für Checkboxen"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Attribut-Selektoren erlauben gezielte Auswahl bestimmter HTML-Elemente basierend auf ihren Attributen und deren Werten."
+},
+{
+"frage": "Welche CSS-Regel überschreibt eher eine allgemeine Regel wie input { width: 100%; }?",
+"antworten": [
+"body { width: 100%; }",
+"input { width: 50%; }",
+"form { width: 100%; }",
+"input[type=\"checkbox\"] { width: 20px; }",
+"* { width: 10px; }"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Spezifischere Selektoren haben Vorrang. Ein Attribut-Selektor ist genauer als ein einfacher Element-Selektor."
+},
+{
+"frage": "Was bedeutet CSS-Spezifität grundsätzlich?",
+"antworten": [
+"Die Geschwindigkeit, mit der CSS geladen wird",
+"Die Anzahl der HTML-Elemente auf der Seite",
+"Die Reihenfolge der Dateien im Projekt",
+"Die Priorität, mit der CSS-Regeln angewendet werden",
+"Die Größe der CSS-Datei"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Spezifität beschreibt, welche Regel bei Konflikten zwischen mehreren CSS-Regeln gewinnt. Sie ist ein zentrales Konzept für das Debugging von Layoutproblemen."
+},
+{
+"frage": "Warum wird eine Regel manchmal trotz korrektem CSS nicht angewendet?",
+"antworten": [
+"Weil CSS nur im Dark Mode funktioniert",
+"Weil HTML keine CSS-Dateien lesen kann",
+"Weil der Browser nur eine CSS-Regel pro Seite erlaubt",
+"Weil eine andere Regel mit höherer Priorität sie überschreibt",
+"Weil CSS nur mit JavaScript funktioniert"
+],
+"korrekteAntwort": 3,
+"erklaerung": "Wenn mehrere Regeln auf dasselbe Element wirken, entscheidet die Priorität darüber, welche tatsächlich sichtbar wird."
+},
+{
+"frage": "Welche Regel gewinnt bei gleicher Spezifität?",
+"antworten": [
+"Die kürzeste Regel",
+"Die erste im Dokument",
+"Die Regel mit mehr HTML-Tags",
+"Die zufällige Regel",
+"Die zuletzt definierte Regel im CSS"
+],
+"korrekteAntwort": 4,
+"erklaerung": "Wenn Spezifität gleich ist, entscheidet die Reihenfolge im Stylesheet. Spätere Regeln überschreiben frühere."
+},
+{
+"frage": "Was passiert bei einem sehr spezifischen Selektor wie #id im Vergleich zu einer Klasse .class?",
+"antworten": [
+"Die Klasse gewinnt immer",
+"Es gibt keinen Unterschied",
+"Beide werden ignoriert",
+"Die ID-Regel hat höhere Priorität und überschreibt die Klasse",
+"Die Klasse wird automatisch in eine ID umgewandelt"
+],
+"korrekteAntwort": 3,
+"erklaerung": "IDs haben im CSS eine höhere Gewichtung als Klassen und setzen sich daher bei Konflikten durch."
+},
+{
+"frage": "Welche Kombination beschreibt korrekt, warum CSS manchmal 'nicht funktioniert'?",
+"antworten": [
+"CSS ist immer fehlerhaft in modernen Browsern",
+"HTML blockiert CSS standardmäßig",
+"CSS funktioniert nur ohne Selektoren",
+"CSS wird nur im Server ausgeführt",
+"Eine andere Regel mit höherer Spezifität oder späterer Definition überschreibt sie"
+],
+"korrekteAntwort": 4,
+"erklaerung": "In den meisten Fällen liegt kein Fehler im CSS vor, sondern eine andere Regel hat Vorrang. Das Verständnis von Priorität ist entscheidend für Debugging."
+},
+{
+"frage": "Welche Layout-Technik ist am besten geeignet für ein Formular mit mehreren Feldern untereinander (Name, E-Mail, Nachricht)?",
+"antworten": [
+"Grid, weil es nur für Texte gedacht ist",
+"Flexbox, weil es 1D-Layouts gut unterstützt",
+"Table, weil es moderner ist als Flexbox",
+"Position: absolute, weil es schneller ist",
+"Inline-Block, weil es kein CSS Grid braucht"
+],
+"korrekteAntwort": 1,
+"erklaerung": "Für lineare Anordnungen (eine Richtung: nur vertikal oder horizontal) ist Flexbox die passende Lösung. Formulare bestehen meist aus einer einzigen Spalte."
+},
+{
+"frage": "Wann ist CSS Grid die bessere Wahl als Flexbox?",
+"antworten": [
+"Wenn Elemente nur untereinander stehen sollen",
+"Wenn nur ein einzelnes Element zentriert wird",
+"Wenn ein zweidimensionales Layout mit Zeilen und Spalten benötigt wird",
+"Wenn kein CSS verwendet werden soll",
+"Wenn nur Text formatiert wird"
+],
+"korrekteAntwort": 2,
+"erklaerung": "Grid eignet sich für Layouts mit zwei Achsen gleichzeitig, z. B. komplexe Seitenraster mit Spalten und Zeilen."
+},
+{
+"frage": "Warum wird Flexbox oft für Formulare verwendet?",
+"antworten": [
+"Weil Flexbox automatisch Tabellen erstellt",
+"Weil Flexbox nur für Grid-Ersatz gedacht ist",
+"Weil Formulare meist nur eine Richtung (vertikal) benötigen",
+"Weil Flexbox CSS ersetzt",
+"Weil Flexbox keine Abstände braucht"
+],
+"korrekteAntwort": 2,
+"erklaerung": "Formulare bestehen meist aus einer linearen Struktur. Flexbox ist dafür einfacher und schneller als Grid."
+},
+{
+"frage": "Warum funktioniert dieses Layout nicht?\n.container {\n display: grid;\n justify-content: center;\n}\nWas fehlt wahrscheinlich?",
+"antworten": [
+"Grid kann nicht zentrieren",
+"justify-content funktioniert nur mit Flexbox",
+"Es fehlen definierte Spalten oder Inhalte zur Verteilung",
+"CSS ist hier komplett falsch",
+"Grid benötigt flex-grow"
+],
+"korrekteAntwort": 2,
+"erklaerung": "Ausrichtungseigenschaften wirken nur sichtbar, wenn ein echtes Raster oder freie Fläche vorhanden ist. Ohne Struktur sieht man keinen Effekt."
+},
+{
+"frage": "Warum werden Flex-Items nicht nebeneinander angezeigt?\n.container {\n flex-direction: row;\n}\nWas fehlt?",
+"antworten": [
+"display: flex fehlt",
+"justify-content fehlt",
+"align-items fehlt",
+"grid-template-columns fehlt",
+"position: relative fehlt"
+],
+"korrekteAntwort": 0,
+"erklaerung": "Flexbox wird nur aktiviert, wenn display: flex gesetzt ist. flex-direction allein reicht nicht aus."
+},
+{
+"frage": "Warum funktioniert folgendes CSS nicht wie erwartet?\n.item {\n width: 100%;\n}\n.container {\n display: flex;\n}",
+"antworten": [
+"Flexbox ignoriert width immer",
+"Alle Elemente werden automatisch zentriert",
+"width funktioniert nur mit Grid",
+"Flexbox verhindert alle Größenangaben",
+"Die Breite wird durch Flexbox-Verhalten beeinflusst, nicht komplett ignoriert"
+],
+"korrekteAntwort": 4,
+"erklaerung": "Flexbox verändert das Größenverhalten von Elementen abhängig vom verfügbaren Raum und flex-Einstellungen."
+}
+]
